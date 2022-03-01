@@ -56,7 +56,6 @@ public class Stack : Singleton<Stack>
         brick.owner = this;
         _list.Add(brick);
         scalingUp += 0.02f;
-        //currentStack++;
     }
 
     public void Deleted(int index)

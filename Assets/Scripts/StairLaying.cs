@@ -15,12 +15,9 @@ public class StairLaying : Singleton<StairLaying>
     [SerializeField] public GameObject ladder;
     [SerializeField] public float scalingUp = 0;
 
-    //private bool _isEntered = true;
+    public int Count => _list.Count;
 
-    private void Start()
-    {
-        //Rigidbody rb = ladder.gameObject.AddComponent<Rigidbody>();
-    }
+    //private bool _isEntered = true;
 
     public void KneeTheBricks()
     {
@@ -56,17 +53,25 @@ public class StairLaying : Singleton<StairLaying>
 
     public void DropTheLadder()
     {
-        var ladders = GetComponent<Ladder>();
+        int lastChildIndex = stairs.transform.childCount - 1;
         stairs.transform.DetachChildren();
-        if (_list.Count>0)
-        {
-            Debug.Log("eleman saıyıs"+_list.Count);
-        }
-        if (stairs.transform.childCount <= 0)
-        {
-            Debug.Log("gırdı");
-            //_isEntered = false;
-        }
+        Deleted(lastChildIndex);
         scalingUp = 0;
+    }
+    public void Deleted(int index)
+    {
+        if (index < _list.Count)
+        {
+            _list.RemoveAt(index);
+        }
+    }
+
+    public void Deleted(Ladder ladder)
+    {
+        var index = _list.IndexOf(ladder);
+        if (index != -1)
+        {
+            Deleted(index);
+        }
     }
 }
