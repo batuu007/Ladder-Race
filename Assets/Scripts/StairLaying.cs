@@ -65,13 +65,4 @@ public class StairLaying : Singleton<StairLaying>
             _list.RemoveAt(index);
         }
     }
-
-    public void Deleted(Ladder ladder)
-    {
-        var index = _list.IndexOf(ladder);
-        if (index != -1)
-        {
-            Deleted(index);
-        }
-    }
 }

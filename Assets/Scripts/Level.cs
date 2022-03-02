@@ -6,11 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Level : Singleton<Level>
 {
-   public void GameOver()
-   {
-      
-   }
-
+    [SerializeField] private GameObject _victoryScreen;
+    [SerializeField] private GameObject _levelProgress;
    public void RestartTheGame()
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -23,4 +20,11 @@ public class Level : Singleton<Level>
       level = level % SceneManager.sceneCountInBuildSettings;
       SceneManager.LoadScene(level);
    }
+    [Button]
+    public void ControlMovementAndPanel()
+    {
+        ForwardMovement.Instance._canMove = false;
+        _victoryScreen.SetActive(true);
+        _levelProgress.SetActive(false);   
+    }
 }

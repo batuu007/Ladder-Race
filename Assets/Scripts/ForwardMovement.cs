@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ForwardMovement : MonoBehaviour
+public class ForwardMovement : Singleton<ForwardMovement>
 {
     [SerializeField] private float _moveSpeed;
-    private bool _canMove = true;
+    public bool _canMove = true;
 
     private void Update()
     {

@@ -29,20 +29,17 @@ public class Stack : Singleton<Stack>
             stackPoint.transform.position.z);
         if (_list.Count%3==0 )
         {
-            //setPos.y += scalingUp;
             setPos.z += 0f; 
             setPos.y += scalingUp;
         } 
         if (_list.Count%3==1 )
         {
-            //setPos.y += scalingUp;
             setPos.z -= 0.0533f;
             setPos.y += scalingUp;
         }
 
         if (_list.Count%3==2)
         {
-            //setPos.y += scalingUp;
             setPos.z -= 0.1f;
             setPos.y += scalingUp;
         }
@@ -66,15 +63,6 @@ public class Stack : Singleton<Stack>
             _list.RemoveAt(index);
             Destroy(brick.gameObject);
             scalingUp -= 0.02f;
-        }
-    }
-
-    public void Deleted(Brick brick)
-    {
-        var index = _list.IndexOf(brick);
-        if (index != -1)
-        {
-            Deleted(index);
         }
     }
 }
