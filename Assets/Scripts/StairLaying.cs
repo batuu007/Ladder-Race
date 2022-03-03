@@ -37,17 +37,8 @@ public class StairLaying : Singleton<StairLaying>
             laddergo.transform.SetParent(stairs.transform);
             ladders.owner = this;
             _list.Add(ladders);
-            scalingUp += 0.211485f;
+            scalingUp -= 0.211485f;
             Stack.Instance.Deleted(lastChildIndex);
-            //Stack.Instance.currentStack--
-            //Destroy(Stack.Instance.stackPoint.transform.GetChild(lastChildIndex).gameObject);
-
-            //Stack.Instance.stackPoint.transform.GetChild(lastChildIndex).position = setPosition;
-            /*var brickgo = stairs.transform.GetChild(0).GetComponent<Brick>();
-            var brick = brickgo.owner;
-            var count = brick.Count;
-            Stack.Instance.Deleted(count-1);*/
-            //Stack.Instance.stackPoint.transform.GetChild(lastChildIndex).SetParent(stairs.transform);
         }
     }
 
