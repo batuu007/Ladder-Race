@@ -15,7 +15,7 @@ public class CharacterUp : MonoBehaviour
                 _isClicked = true;
                 //rb.AddForce(Vector3.up*Stack.Instance.Count,ForceMode.Impulse);
                 StairLaying.Instance.KneeTheBricks();
-                transform.Translate(Vector3.up * StairLaying.Instance.Count * Time.deltaTime);
+                transform.Translate(Vector3.up * Stack.Instance.Count * Time.deltaTime);
                 //Vector3.MoveTowards()
                 //Vector3 setPosition = new Vector3(transform.position.x,
                 //transform.position.y + Stack.Instance.Count, transform.position.z);

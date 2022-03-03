@@ -343,6 +343,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 505156987}
+--- !u!1 &23454778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8835124572561636221, guid: 2cba30b98307d8246b1fc9ab9c350ec4, type: 3}
+  m_PrefabInstance: {fileID: 8835124571369629619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &38008939
 GameObject:
   m_ObjectHideFlags: 0
@@ -11419,6 +11424,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stickman
       objectReference: {fileID: 0}
+    - target: {fileID: 8529187868640202651, guid: 2cba30b98307d8246b1fc9ab9c350ec4, type: 3}
+      propertyPath: stairs
+      value: 
+      objectReference: {fileID: 23454778}
     - target: {fileID: 8835124572561636220, guid: 2cba30b98307d8246b1fc9ab9c350ec4, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.014
