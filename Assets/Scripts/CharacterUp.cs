@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 public class CharacterUp : MonoBehaviour
 {
     private bool _isClicked = true;
@@ -15,7 +16,9 @@ public class CharacterUp : MonoBehaviour
                 _isClicked = true;
                 //rb.AddForce(Vector3.up*Stack.Instance.Count,ForceMode.Impulse);
                 StairLaying.Instance.KneeTheBricks();
-                transform.Translate(Vector3.up * Stack.Instance.Count * Time.deltaTime);
+                Debug.Log(Stack.Instance.Count + "kac adet stack");
+                transform.DOMoveY(3f, 0.5f,false);
+                //transform.Translate(Vector3.up * Stack.Instance.Count * Time.deltaTime);
                 //Vector3.MoveTowards()
                 //Vector3 setPosition = new Vector3(transform.position.x,
                 //transform.position.y + Stack.Instance.Count, transform.position.z);

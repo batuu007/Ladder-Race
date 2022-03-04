@@ -43,7 +43,7 @@ public class Stack : Singleton<Stack>
             setPos.z -= 0.1f;
             setPos.y += scalingUp;
         }
-        Debug.Log("kacıncı elaman : "+ _list.Count%3);
+        //Debug.Log("kacıncı elaman : "+ _list.Count%3);
         //index++;
         var brickgo = Instantiate(obj, setPos
             , Quaternion.Euler(0, 0, 90));
