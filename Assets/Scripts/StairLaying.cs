@@ -30,6 +30,7 @@ public class StairLaying : Singleton<StairLaying>
             //_isEntered = true;
             Debug.Log(lastChildIndex);
             //yield return new WaitForSeconds(0.01f);
+            //Invoke("LadderSpawnner",0.5f);
             LadderSpawnner();
             Stack.Instance.Deleted(lastChildIndex);
         }
@@ -40,6 +41,7 @@ public class StairLaying : Singleton<StairLaying>
         var laddergo = Instantiate(ladder,
             new Vector3(stairs.transform.position.x, stairs.transform.position.y + scalingUp,
                 stairs.transform.position.z + scalingUp), Quaternion.Euler(0, 90, 45));
+        //System.Threading.Thread.Sleep(50);
         var ladders = laddergo.GetComponent<Ladder>();
         laddergo.transform.SetParent(stairs.transform);
         ladders.owner = this;

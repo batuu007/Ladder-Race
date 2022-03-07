@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FinishTrigger : MonoBehaviour
 {
+    [SerializeField] private Animator myAnimitor;
     private void OnTriggerEnter(Collider other)
     {
        StartCoroutine(WillTriggeredFinish(other));
@@ -15,6 +16,7 @@ public class FinishTrigger : MonoBehaviour
         if (other.CompareTag("Stickman"))
         {
             Level.Instance.ControlMovementAndPanel();
+            myAnimitor.SetTrigger("FinishDance");
         }
     }
 }

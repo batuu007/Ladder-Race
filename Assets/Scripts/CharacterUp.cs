@@ -14,14 +14,8 @@ public class CharacterUp : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 _isClicked = true;
-                //rb.AddForce(Vector3.up*Stack.Instance.Count,ForceMode.Impulse);
                 StairLaying.Instance.KneeTheBricks();
-                Debug.Log(Stack.Instance.Count + "kac adet stack");
-                transform.DOMoveY(3f, 0.5f,false);
-                //transform.Translate(Vector3.up * Stack.Instance.Count * Time.deltaTime);
-                //Vector3.MoveTowards()
-                //Vector3 setPosition = new Vector3(transform.position.x,
-                //transform.position.y + Stack.Instance.Count, transform.position.z);
+                transform.DOMoveY(3 + 0.211485f, 0.5f);
             }
 
 
