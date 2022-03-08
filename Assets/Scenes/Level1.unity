@@ -706,7 +706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186180802}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.084, y: 3.548, z: 21.377}
+  m_LocalPosition: {x: 0.084, y: 3.045, z: 21.377}
   m_LocalScale: {x: 0.07000003, y: 0.18, z: 0.07}
   m_Children: []
   m_Father: {fileID: 813143435}
@@ -2587,7 +2587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617421314}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.084, y: 3.548, z: 21.136002}
+  m_LocalPosition: {x: 0.084, y: 3.045, z: 21.136002}
   m_LocalScale: {x: 0.07000003, y: 0.18, z: 0.07}
   m_Children: []
   m_Father: {fileID: 813143435}
@@ -3905,7 +3905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817912403}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.084, y: 3.548, z: 21.297}
+  m_LocalPosition: {x: 0.084, y: 3.045, z: 21.297}
   m_LocalScale: {x: 0.07000003, y: 0.18, z: 0.07}
   m_Children: []
   m_Father: {fileID: 813143435}
@@ -4345,7 +4345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894435067}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.084, y: 3.548, z: 21.457}
+  m_LocalPosition: {x: 0.084, y: 3.045, z: 21.457}
   m_LocalScale: {x: 0.07000003, y: 0.18, z: 0.07}
   m_Children: []
   m_Father: {fileID: 813143435}
@@ -10558,7 +10558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053976128}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.084, y: 3.548, z: 21.217001}
+  m_LocalPosition: {x: 0.084, y: 3.045, z: 21.217001}
   m_LocalScale: {x: 0.07000003, y: 0.18, z: 0.07}
   m_Children: []
   m_Father: {fileID: 813143435}
@@ -11305,11 +11305,11 @@ PrefabInstance:
       objectReference: {fileID: 1939491231}
     - target: {fileID: 5151309278935519847, guid: c13e904aa8ee2c149a16c95e2d019303, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5151309278935519847, guid: c13e904aa8ee2c149a16c95e2d019303, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.517
+      value: 2.26
       objectReference: {fileID: 0}
     - target: {fileID: 5151309279024279485, guid: c13e904aa8ee2c149a16c95e2d019303, type: 3}
       propertyPath: m_LocalPosition.z
